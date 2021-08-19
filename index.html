@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form </title>
+</head>
+
+<body>
+    <h1>Customer Survey Form </h1>
+
+    <!-- Create Form -->
+    <form id="form">
+        <div class="form-control">
+            <label for="" style="font-weight: bold;">Name</label>
+            <input type="text" id="name" placeholder="First name" required />
+            
+            <input type="text" id="name" placeholder="Last name"  style="margin-left: 20px;" required/>
+        </div>
+        <br>
+        <div class="form-control">
+            <label for="" style="font-weight: bold;">EmailId</label>
+            <input type="email" id="name" placeholder="Enter your EmailId"  style="width:90%;" required/>
+            
+
+        </div>
+        <br>
+        <div class="form-control">
+            <label for="" style="font-weight: bold;">Is this is your First time using our Product & services?</label>
+            <label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">Yes</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">No</input>
+			</label>
+			
+        </div>
+        <div class="form-control">
+            <label for="" style="font-weight: bold;">Would you suggest our product to your friends and colleagues?</label>
+            <label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">Yes</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">No</input>
+			</label>
+			
+        </div>
+        <br>
+        <div class="form-control">
+            <label for="" style="font-weight: bold;">How satisfied are you with our product?</label>
+            <label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">Very satisfied</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">Satisfied</input>
+			</label>
+			
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">Unsatisfied</input>
+			</label>
+            </div>
+            <br>
+			<div class="form-control">
+                <label for="" style="font-weight: bold;">Do you have any suggestion to improve our Service?</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="write your suggestion" style="height: 100px;" required></textarea>
+            </div>
+            
+			<center><button type="submit" style="display: block;" value="submit" onclick="ValidateEmail(document.form1.text1)" required>
+                Submit
+            </button>
+        </center>
+      
+
+    </form>
+    <script>function ValidateEmail(mail) 
+        {
+         if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
+          {
+            return (true)
+          }
+            alert("You have entered an invalid email address!")
+            return (false)
+        }</script>
+</body>
+
+</html>
